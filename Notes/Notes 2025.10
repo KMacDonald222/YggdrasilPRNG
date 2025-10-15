@@ -1,0 +1,13 @@
+YggdrasilPRNG Development Notes 2025.10
+2025.10.15@10:10ADT
+
+2025.10.15:
+
+@10:01ADT: Setting up the basics of the building/testing workflow for this
+project. There will eventually be two driver programs, but only one will be used
+for now for testing during development of the YggdrasilPRNG library. This will
+test the process of building the library into an archive (for Linux only, but
+eventually other platforms), including and linking it in the YGen generator
+driver program, and running some of its code.
+
+@11:06ADT: The build/test workflow is now up and running as described above.
