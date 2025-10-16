@@ -5,9 +5,11 @@
 #ifndef YGGDRASIL_PRNG_H
 #define YGGDRASIL_PRNG_H
 
+#include <string>
+
 class YggdrasilPRNG {
 public:
-    void test();
+    void test(const std::string&);
 };
 
 #endif

@@ -1,0 +1,26 @@
+Script started on 2025-10-15 23:53:54-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="199" LINES="19"]
+[?2004hsh-5.2$ make
+[?2004lmake ../../Binaries/Linux/libYggdrasilPRNG.a
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ \
+	-o ../../Source/YggdrasilPRNG/YggdrasilPRNG.o \
+	-c ../../Source/YggdrasilPRNG/YggdrasilPRNG.cpp
+ar rcs ../../Binaries/Linux/libYggdrasilPRNG.a ../../Source/YggdrasilPRNG/YggdrasilPRNG.o
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+make ../../Binaries/Linux/YGen
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -I../../Include/ -o ../../Source/YGen/YGen.o \
+	-c ../../Source/YGen/YGen.cpp
+g++ -Wall -Wextra -pedantic -O3 -o ../../Binaries/Linux/YGen ../../Source/YGen/YGen.o -L../../Binaries/Linux/ -lYggdrasilPRNG -L../../Vendor/Libraries/ -lsha
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+[?2004hsh-5.2$ ./../../Binaries/Linux/YGen
+[?2004lSHA512("Hello World!") = 861844d6704e8573fec34d967e20bcfef3d424cf48be04e6dc08f2bd58c729743371015ead891cc3cf1c9d34b49264b510751b1ff9e537937bc46b5d6ff4ecc8
+[?2004hsh-5.2$ make clean
+[?2004lrm ../../Source/YggdrasilPRNG/*.o
+rm ../../Binaries/Linux/libYggdrasilPRNG.a
+rm ../../Source/YGen/*.o
+rm ../../Binaries/Linux/YGen
+[?2004hsh-5.2$ [?2004l
+exit
+
+Script done on 2025-10-15 23:54:14-03:00 [COMMAND_EXIT_CODE="0"]

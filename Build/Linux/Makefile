@@ -6,11 +6,12 @@
 Compiler = g++ -Wall -Wextra -pedantic -O3
 Archiver = ar rcs
 YggdrasilPRNG_Source = ../../Source/YggdrasilPRNG/
-YggdrasilPRNG_Include = -I../../Include/YggdrasilPRNG/
+YggdrasilPRNG_Include = -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/
 YggdrasilPRNG_Target = ../../Binaries/Linux/libYggdrasilPRNG.a
 YGen_Source = ../../Source/YGen/
 YGen_Include = -I../../Include/
-YGen_Libraries = -L../../Binaries/Linux/ -lYggdrasilPRNG
+YGen_Libraries = -L../../Binaries/Linux/ -lYggdrasilPRNG \
+	-L../../Vendor/Libraries/ -lsha
 YGen_Target = ../../Binaries/Linux/YGen
 
 # Build YggdrasilPRNG library and all driver programs

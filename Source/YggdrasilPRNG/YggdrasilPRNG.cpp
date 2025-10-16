@@ -4,8 +4,12 @@
 
 #include "YggdrasilPRNG.h"
 
+#include <SHA/SHA512.h>
+
 #include <iostream>
 
-void YggdrasilPRNG::test() {
-    std::cout << "Hello World! - YggdrasilPRNG library test" << std::endl;
+void YggdrasilPRNG::test(const std::string& input) {
+    SHA512 sha;
+    std::cout << "SHA512(\"" << input << "\") = " << sha.hash(input)
+        << std::endl;
 }

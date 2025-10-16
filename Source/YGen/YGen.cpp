@@ -6,6 +6,6 @@
 
 int main() {
     YggdrasilPRNG yprng;
-    yprng.test();
+    yprng.test("Hello World!");
     return 0;
 }
