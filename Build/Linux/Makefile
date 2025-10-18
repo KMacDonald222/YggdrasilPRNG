@@ -3,7 +3,7 @@
 # Created:		2025.10.15@10:17ADT
 
 # Define build constants
-Compiler = g++ -Wall -Wextra -pedantic -O3
+Compiler = g++ -Wall -Wextra -pedantic -O3 -std=c++20
 Archiver = ar rcs
 YggdrasilPRNG_Source = ../../Source/YggdrasilPRNG/
 YggdrasilPRNG_Include = -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/
@@ -20,13 +20,23 @@ all:
 	make $(YGen_Target)
 
 # Build YggdrasilPRNG library
-$(YggdrasilPRNG_Target): $(YggdrasilPRNG_Source)YggdrasilPRNG.o
-	$(Archiver) $(YggdrasilPRNG_Target) $(YggdrasilPRNG_Source)YggdrasilPRNG.o
+$(YggdrasilPRNG_Target): $(YggdrasilPRNG_Source)YggdrasilPRNG.o \
+		$(YggdrasilPRNG_Source)Utilities.o $(YggdrasilPRNG_Source)Node.o
+	$(Archiver) $(YggdrasilPRNG_Target) $(YggdrasilPRNG_Source)YggdrasilPRNG.o \
+		$(YggdrasilPRNG_Source)Utilities.o $(YggdrasilPRNG_Source)Node.o
 
 $(YggdrasilPRNG_Source)YggdrasilPRNG.o: $(YggdrasilPRNG_Source)YggdrasilPRNG.cpp
 	$(Compiler) $(YggdrasilPRNG_Include) \
 		-o $(YggdrasilPRNG_Source)YggdrasilPRNG.o \
 		-c $(YggdrasilPRNG_Source)YggdrasilPRNG.cpp
+
+$(YggdrasilPRNG_Source)Utilities.o: $(YggdrasilPRNG_Source)Utilities.cpp
+	$(Compiler) $(YggdrasilPRNG_Include) -o $(YggdrasilPRNG_Source)Utilities.o \
+		-c $(YggdrasilPRNG_Source)Utilities.cpp
+
+$(YggdrasilPRNG_Source)Node.o: $(YggdrasilPRNG_Source)Node.cpp
+	$(Compiler) $(YggdrasilPRNG_Include) -o $(YggdrasilPRNG_Source)Node.o \
+		-c $(YggdrasilPRNG_Source)Node.cpp
 
 # Build YGen driver program
 $(YGen_Target): $(YGen_Source)YGen.o

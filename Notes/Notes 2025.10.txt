@@ -139,3 +139,24 @@ project at different stages.
 
 @23:51ADT: This test is done and the vendor library is working - uploading the
 LFSR reference material and the test script.
+
+2025.10.16:
+
+@11:17ADT: The next part of the PRNG library to implement will be the abstract
+node class and the LFSR class which will inherit some code from it. The abstract
+node class has only the three generate, seed, and clear functions and a set of
+pointers to the node's children and will be the parent class of each of the five
+other node types.
+
+A utilities module will also be implemented to provide wrapper functions for the
+SHA vendor library and eventually the string padding/permutation function
+described above.
+
+@15:03ADT: The abstract node class is implemented and the project can move on to
+these utility functions - the permutation and SHA functions. SHA functions will
+be set up first since they're simpler.
+
+2025.10.18:
+
+@00:42ADT: Running the test script for the SHA-512 vendor library wrapper
+functions and then committing work for so far.
