@@ -21,6 +21,7 @@ void Node::clear() {
     // Call clear on each child node and remove their pointers
     for (size_t i = 0; i < m_children.size(); i++) {
         m_children[i]->clear();
+        delete (m_children[i]);
         m_children[i] = 0;
     }
     m_children.clear();

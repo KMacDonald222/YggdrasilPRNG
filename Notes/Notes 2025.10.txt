@@ -159,4 +159,46 @@ be set up first since they're simpler.
 2025.10.18:
 
 @00:42ADT: Running the test script for the SHA-512 vendor library wrapper
-functions and then committing work for so far.
+functions and then committing work for so far. The next part to set up is the
+padding and permutation function described above, this will use the SHA-512
+wrapper functions but nothing else.
+
+The 16 permutations of 4 and 8 objects will be selected by the Permutation
+Generator Python script in the Scripts directory of this project. A script of
+this running will be placed in the tests. This script selects a number of
+permutations of a number of objects with Python 3's built-in random module,
+ensures that no two permutations selected are the same, and then prints them in
+the C++ array initializer format so they can be hardcoded into the utilities
+module.
+
+@09:26ADT: The permutations were generated last night, and they are now in the
+Utilities module. The permuteString utility function will now be implemented.
+
+2025.10.19:
+
+@21:05ADT: Continuing the implementation of the string padding/permutation
+function. Console output throughout the whole process will be added to show the
+function running and then a test will be created.
+
+@22:48ADT: Interrupting this process to ensure that, as in the concept for the
+clear function for node types, all sensitive memory - as soon as it's done being
+used - is overwritten with 0's before it is deleted.
+
+The padding and permutation function is working as intended, and has its tests
+implemented. The current code will all be reviewed to overwrite all sensitive
+memory.
+
+2025.10.20:
+
+@17:16ADT: Going through the entire code base so far and checking for sensitive
+information to overwrite before releasing from the stack back to the system. The
+YGen test implementation will be excluded from this since it will consistently
+change.
+
+2025.10.21:
+
+@12:36ADT: The implementation of the utility function with memory safety is
+finished and can now be tested. A script will be placed in the Tests directory
+showing the function's operation on a "Hello World!" string, then the console
+output will be removed, the function tested again to ensure the same output, and
+the code will be uploaded.

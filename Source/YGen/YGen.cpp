@@ -10,12 +10,8 @@
 
 int main() {
     std::string input = "Hello World!";
-    std::string hexHash = hashHexadecimal(input);
-    std::vector<bool> binHash = hashBinary(input);
-    std::cout << "SHA-512(\"" << input << "\") = " << hexHash << std::endl;
-    for (size_t i = 0; i < binHash.size(); i++) {
-        std::cout << (int)binHash[i];
-    }
-    std::cout << std::endl;
+    std::string permuted = permuteString(input);
+    std::cout << "Permute(\"" << input << "\") = \"" << permuted << "\""
+        << std::endl;
     return 0;
 }

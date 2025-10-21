@@ -13,6 +13,10 @@
 class Node {
 public:
     /*
+    Virutalized destructor for clearing node memory
+    */
+    virtual ~Node();
+    /*
     Initialize this node's and its childrens' memory
     Parameter: const std::string& seed - Seed data to define this node's initial
     state and the tree structure below it
