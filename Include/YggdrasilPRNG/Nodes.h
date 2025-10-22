@@ -1,4 +1,4 @@
-// Files:       Nodes.h
+// File:        Nodes.h
 // Author:      Keegan MacDonald (KMacDonald222)
 // Created:     2025.10.16@14:49ADT
 
@@ -37,6 +37,32 @@ public:
 protected:
     // Set of pointers to this node's children in the PRNG tree
     std::vector<Node*> m_children;
+};
+
+class LFSRNode : public Node {
+public:
+    /*
+    Initialize this LFSR node's memory
+    Parameter: const std::string& seed - Seed data to define this LFSR node's
+    initial state
+    Parameter: unsigned int - Unused
+    */
+    void seed(const std::string&, unsigned int) override;
+    /*
+    Get a pseudo-random byte of data from this LFSR node
+    Returns: uint8_t - A pseudo-random byte of LFSR output
+    */
+    uint8_t generate() override;
+    /*
+    Free this LFSR node's memory
+    */
+    void clear() override;
+
+private:
+    // The current state of this node's LFSR
+    std::vector<bool> m_state;
+    // The tap mask of this node's LFSR
+    std::vector<bool> m_taps;
 };
 
 #endif

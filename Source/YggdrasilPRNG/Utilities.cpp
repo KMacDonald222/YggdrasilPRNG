@@ -78,7 +78,7 @@ std::string hashHexadecimal(const std::string& input) {
     return sha512.hash(input);
 }
 
-std::string permuteString(const std::string& input) {
+std::string permuteString(std::string& input) {
     std::string hashHex = hashHexadecimal(input);
     // Pad the input to the next multiple if 8 in length
     std::string paddedInput = input;
@@ -86,6 +86,11 @@ std::string permuteString(const std::string& input) {
     do {
         paddedInput += hashHex[paddingIndex++];
     } while (paddedInput.length() % 8 != 0);
+    // Clear the original input from memory
+    for (size_t i = 0; i < input.length(); i++) {
+        input[i] = '\0';
+    }
+    input.clear();
     // Break input into 4-character chunks
     std::vector<std::string> chunks4;
     for (size_t i = 0; i < paddedInput.length(); i += 4) {

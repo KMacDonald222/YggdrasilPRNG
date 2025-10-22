@@ -202,3 +202,35 @@ finished and can now be tested. A script will be placed in the Tests directory
 showing the function's operation on a "Hello World!" string, then the console
 output will be removed, the function tested again to ensure the same output, and
 the code will be uploaded.
+
+@12:50ADT: The next thing to do is to add the LFSR node type, which will be the
+simplest since it has no children and its operation is well described.
+
+@18:43ADT: The LFSR node type is being created now. The LFSR configurations for
+buffer width and tap positions are selected in the seed function of this node
+type by the hash of the seed from a pre-defined set of 16 configurations. The
+configurations used here are drawn from the set of max-period Galois LFSRs based
+on their widths having subjectively satisfying digit patterns - these could be
+considered magic numbers in security/cryptographic considerations. Generally,
+the configurations selected are on the larger side to increase the periods of
+the LFSRs.
+
+@22:13ADT: The LFSR configurations have been selected. For those selected that
+have four and two-tap configurations, both have been included in the selection.
+The widths of the configurations were selected for the following reasons:
+- 4096, 2048, and 1024 because they are the biggest available in the table given
+by the paper,
+- 777, 666, 555, 444, and 333 because they have repeated digits,
+- 404 because it is a commonly known HTTP error code, and
+- 419, 303, and 222 because of their personal significance to the author (magic
+numbers).
+
+The LFSR node's functions will now be implemented and tested. For testing
+purposes, the width 419 configuration will be replaced with width 8 to simplify
+output in the console. After this implementation, the same memory overwriting
+procedure will be done as before.
+
+@22:54ADT: The LFSR node is working and the code can now be cleaned.
+
+@23:27ADT: The code cleaning is now done, a test script will be generated, the
+code will be finalized, and then this part will be uploaded.

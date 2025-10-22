@@ -7,6 +7,9 @@
 
 // Node member functions
 
+Node::~Node() {
+}
+
 void Node::seed(const std::string& seed, unsigned int layerCount) {
     // Initialize permuted seed value
     std::string workingSeed = seed;
@@ -15,6 +18,11 @@ void Node::seed(const std::string& seed, unsigned int layerCount) {
         m_children[i]->seed(workingSeed, layerCount - 1);
         workingSeed = permuteString(workingSeed);
     }
+    // Clear the working seed from memory
+    for (size_t j = 0; j < workingSeed.length(); j++) {
+        workingSeed[j] = '\0';
+    }
+    workingSeed.clear();
 }
 
 void Node::clear() {

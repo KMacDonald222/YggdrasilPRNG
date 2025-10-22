@@ -22,9 +22,9 @@ Returns: std::string - The hexadecimal representation of the hash
 extern std::string hashHexadecimal(const std::string&);
 /*
 Pad and permute a string according to its SHA-512 hash
-Parameter: const std::string& input - The string to be padded and permuted
+Parameter: std::string& input - The string to be padded and permuted
 Returns: std::string - The padded and permuted string
 */
-extern std::string permuteString(const std::string&);
+extern std::string permuteString(std::string&);
 
 #endif

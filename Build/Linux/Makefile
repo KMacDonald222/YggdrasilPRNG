@@ -21,9 +21,11 @@ all:
 
 # Build YggdrasilPRNG library
 $(YggdrasilPRNG_Target): $(YggdrasilPRNG_Source)YggdrasilPRNG.o \
-		$(YggdrasilPRNG_Source)Utilities.o $(YggdrasilPRNG_Source)Node.o
+		$(YggdrasilPRNG_Source)Utilities.o $(YggdrasilPRNG_Source)Node.o \
+		$(YggdrasilPRNG_Source)LFSRNode.o
 	$(Archiver) $(YggdrasilPRNG_Target) $(YggdrasilPRNG_Source)YggdrasilPRNG.o \
-		$(YggdrasilPRNG_Source)Utilities.o $(YggdrasilPRNG_Source)Node.o
+		$(YggdrasilPRNG_Source)Utilities.o $(YggdrasilPRNG_Source)Node.o \
+		$(YggdrasilPRNG_Source)LFSRNode.o
 
 $(YggdrasilPRNG_Source)YggdrasilPRNG.o: $(YggdrasilPRNG_Source)YggdrasilPRNG.cpp
 	$(Compiler) $(YggdrasilPRNG_Include) \
@@ -37,6 +39,10 @@ $(YggdrasilPRNG_Source)Utilities.o: $(YggdrasilPRNG_Source)Utilities.cpp
 $(YggdrasilPRNG_Source)Node.o: $(YggdrasilPRNG_Source)Node.cpp
 	$(Compiler) $(YggdrasilPRNG_Include) -o $(YggdrasilPRNG_Source)Node.o \
 		-c $(YggdrasilPRNG_Source)Node.cpp
+
+$(YggdrasilPRNG_Source)LFSRNode.o: $(YggdrasilPRNG_Source)LFSRNode.cpp
+	$(Compiler) $(YggdrasilPRNG_Include) -o $(YggdrasilPRNG_Source)LFSRNode.o \
+		-c $(YggdrasilPRNG_Source)LFSRNode.cpp
 
 # Build YGen driver program
 $(YGen_Target): $(YGen_Source)YGen.o
