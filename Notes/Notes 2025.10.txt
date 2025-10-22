@@ -47,9 +47,9 @@ function creates 1-4 XOR node children using the 508th and 509th bits of the
 hash, 0-1 AND node children using the 510th bit of the hash, 0-1 OR node
 children using the 511th bit of the hash, and 1-2 matrix node children using the
 512th bit of the hash. Otherwise, this function creates 5-8 LFSR node children
-using the 510th, 511th, and 512th bits of the hash. Finally, this function seeds
-each of the child nodes with a permuted version of the seed data and one less
-than the layer count.
+using the 511th and 512th bits of the hash. Finally, this function seeds each of
+the child nodes with a permuted version of the seed data and one less than the
+layer count.
 - Generate: Calls the generate function of each child node and returns their
 boolean XOR combination.
 - Clear: Calls the clear function of each child node.
@@ -233,4 +233,24 @@ procedure will be done as before.
 @22:54ADT: The LFSR node is working and the code can now be cleaned.
 
 @23:27ADT: The code cleaning is now done, a test script will be generated, the
-code will be finalized, and then this part will be uploaded.
+code will be finalized, and then this part will be uploaded. The next part to
+set up will be the matrix node type since this will be more complex than the
+other remaining types - this will be done tomorrow.
+
+2025.10.22:
+
+@09:11ADT: Starting the implementation of the matrix node type (as described
+above). This node type will be tested by generating only LFSR children since
+these are the only type yet available.
+
+@12:20ADT: The matrix node type appears to be working based on console output
+and now the code cleanup can be done.
+
+@13:25ADT: The code cleanup is done now and things are working the same as they
+were before. The only thing left to implement in the MatrixNode class is the
+generation of the other three types of nodes as children because they're not
+available yet. The three of them, because they're so simple, similar, and yet
+hard to test on their own, will be the next part of this project implemented.
+
+The current code is being uploaded with placeholders where other child types
+would normally be generated.

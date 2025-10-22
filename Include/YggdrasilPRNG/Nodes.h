@@ -39,6 +39,7 @@ protected:
     std::vector<Node*> m_children;
 };
 
+// PRNG tree LFSR node class
 class LFSRNode : public Node {
 public:
     /*
@@ -63,6 +64,41 @@ private:
     std::vector<bool> m_state;
     // The tap mask of this node's LFSR
     std::vector<bool> m_taps;
+};
+
+// PRNG tree matrix node class
+class MatrixNode : public Node {
+public:
+    /*
+    Initialize this matrix node's and its childrens' memory
+    Parameter: const std::string& seed - Seed data to define this matrix node's
+    initial state and pass to its children
+    Parameter: unsigned int layerCount - The number of layers in the PRNG tree
+    to generate below this matrix node
+    */
+    void seed(const std::string&, unsigned int) override;
+    /*
+    Get a pseudo-random byte of output from this matrix node
+    Returns: uint8_t - A pseudo-random byte
+    */
+    uint8_t generate() override;
+    /*
+    Free this matrix node's and its childrens' memory
+    */
+    void clear() override;
+
+private:
+    // The rows of this matrix node's transformation matrix
+    std::vector<std::vector<int>> m_matrix;
+    // The index of the child currently producing output used to populate the
+    // transformation matrix
+    size_t m_populatingChild = 0;
+
+    /*
+    Shift/update the columns of this matrix node's transformation matrix using
+    the output of its children
+    */
+    void shiftMatrix();
 };
 
 #endif

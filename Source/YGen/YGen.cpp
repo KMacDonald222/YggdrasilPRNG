@@ -10,13 +10,12 @@
 // YGen module functions
 
 int main() {
-    LFSRNode lfsr;
-    lfsr.seed("Hello World!", 0);
-    for (size_t i = 0; i < 64; i++) {
-        std::cout << std::bitset<8>(lfsr.generate());
-        std::cout.flush();
+    MatrixNode matrix;
+    matrix.seed("Hello World!", 1);
+    for (size_t i = 0; i < 3; i++) {
+        std::cout << "Output byte " << i << ": "
+            << std::bitset<8>(matrix.generate()) << std::endl;
     }
-    std::cout << std::endl;
-    lfsr.clear();
+    matrix.clear();
     return 0;
 }

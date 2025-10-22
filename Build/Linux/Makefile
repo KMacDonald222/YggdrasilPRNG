@@ -22,10 +22,10 @@ all:
 # Build YggdrasilPRNG library
 $(YggdrasilPRNG_Target): $(YggdrasilPRNG_Source)YggdrasilPRNG.o \
 		$(YggdrasilPRNG_Source)Utilities.o $(YggdrasilPRNG_Source)Node.o \
-		$(YggdrasilPRNG_Source)LFSRNode.o
+		$(YggdrasilPRNG_Source)LFSRNode.o $(YggdrasilPRNG_Source)MatrixNode.o
 	$(Archiver) $(YggdrasilPRNG_Target) $(YggdrasilPRNG_Source)YggdrasilPRNG.o \
 		$(YggdrasilPRNG_Source)Utilities.o $(YggdrasilPRNG_Source)Node.o \
-		$(YggdrasilPRNG_Source)LFSRNode.o
+		$(YggdrasilPRNG_Source)LFSRNode.o $(YggdrasilPRNG_Source)MatrixNode.o
 
 $(YggdrasilPRNG_Source)YggdrasilPRNG.o: $(YggdrasilPRNG_Source)YggdrasilPRNG.cpp
 	$(Compiler) $(YggdrasilPRNG_Include) \
@@ -43,6 +43,11 @@ $(YggdrasilPRNG_Source)Node.o: $(YggdrasilPRNG_Source)Node.cpp
 $(YggdrasilPRNG_Source)LFSRNode.o: $(YggdrasilPRNG_Source)LFSRNode.cpp
 	$(Compiler) $(YggdrasilPRNG_Include) -o $(YggdrasilPRNG_Source)LFSRNode.o \
 		-c $(YggdrasilPRNG_Source)LFSRNode.cpp
+
+$(YggdrasilPRNG_Source)MatrixNode.o: $(YggdrasilPRNG_Source)MatrixNode.cpp
+	$(Compiler) $(YggdrasilPRNG_Include) \
+		-o $(YggdrasilPRNG_Source)MatrixNode.o \
+		-c $(YggdrasilPRNG_Source)MatrixNode.cpp
 
 # Build YGen driver program
 $(YGen_Target): $(YGen_Source)YGen.o
