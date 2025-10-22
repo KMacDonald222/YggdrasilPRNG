@@ -1,3 +1,6 @@
 [submodule "Vendor/Sources/SHA"]
 	path = Vendor/Sources/SHA
 	url = https://www.github.com/pr0f3ss/SHA.git
+[submodule "Tests/Statistical_Tests/sp800_22_tests"]
+	path = Tests/Statistical_Tests/sp800_22_tests
+	url = https://www.github.com/dj-on-github/sp800_22_tests.git

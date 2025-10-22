@@ -273,3 +273,17 @@ be overwritten in any of the three new classes.
 @17:18ADT: This is all working now, a test will be generated in the Tests
 directory and this code will be uploaded, then the next steps will be planned
 out here.
+
+The next part is to run some statistical tests on the output of the PRNG library
+to check that everything is working satisfactorily. This will be done using the
+tests described in the U.S. NIST Special Publication 800-22 Revision 1a - this
+document will be copied into the References directory as "NIST SP 800-22 Rev.
+1a.pdf". The NSA has been known to interfere with the security of NIST
+standards, but if one is worried about the NSA reading their communications then
+they either are not using this program or they are very foolish - and either way
+are not the author's concern. These tests, implemented in Python, will be added
+as a submodule from the GitHub user David Johnston (dj-on-github)'s
+sp800_22_tests repository. This will be added in the Tests directory under
+Statistical_Tests.
+
+@17:47ADT: Stopping work again on this for now and committing the documentation.
