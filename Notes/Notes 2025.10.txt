@@ -253,4 +253,23 @@ available yet. The three of them, because they're so simple, similar, and yet
 hard to test on their own, will be the next part of this project implemented.
 
 The current code is being uploaded with placeholders where other child types
-would normally be generated.
+would normally be generated. The other three node types can now be added.
+
+@14:00ADT: Pausing work while doing documentation for the three new nodes types
+in the Nodes.h file. The matrix node class is finished with the skeletons of the
+node types. These will all be very similar and will be developed in parallel.
+The generate functions are especially easy, and the clear functions are exactly
+the same as the abstract node and so are not overridden in any of the three.
+
+@16:21ADT: Resuming work on this until @17:30ADT and continuing with the
+documentation of the XOR, AND, and OR node types. Each of the generate functions
+will be implemented first since they're simpler. These are done @16:40ADT,
+moving on to the seed functions then testing.
+
+@17:05ADT: This is done and a full test of the PRNG library can now be done by
+implementing the main YggdrasilPRNG class. There is no sensitive memory that can
+be overwritten in any of the three new classes.
+
+@17:18ADT: This is all working now, a test will be generated in the Tests
+directory and this code will be uploaded, then the next steps will be planned
+out here.

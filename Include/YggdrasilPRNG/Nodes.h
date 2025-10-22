@@ -101,4 +101,58 @@ private:
     void shiftMatrix();
 };
 
+// PRNG tree XOR node class
+class XORNode : public Node {
+public:
+    /*
+    Generate and seed this XOR node's children
+    Parameter: const std::string& seed - Seed data to determine the number of
+    children of each type to generate
+    Parameter: unsigned int layerCount - The number of PRNG tree layers to
+    generate below this XOR node
+    */
+    void seed(const std::string&, unsigned int) override;
+    /*
+    Get a pseudo-random byte of output by XOR of the outputs of all children
+    Returns: uint8_t - A pseudo-random byte
+    */
+    uint8_t generate() override;
+};
+
+// PRNG tree AND node class
+class ANDNode : public Node {
+public:
+    /*
+    Generate and seed this AND node's children
+    Parameter: const std::string& seed - Seed data to determine the number of
+    children of each type to generate
+    Parameter: unsigned int layerCount - The number of PRNG tree layers to
+    generate below this AND node
+    */
+    void seed(const std::string&, unsigned int) override;
+    /*
+    Get a pseudo-random byte of output by AND of the outputs of all children
+    Returns: uint8_t - A pseudo-random byte
+    */
+    uint8_t generate() override;
+};
+
+// PRNG tree OR node class
+class ORNode : public Node {
+public:
+    /*
+    Generate and seed this OR node's children
+    Parameter: const std::string& seed - Seed data to determine the number of
+    children of each type to generate
+    Parameter: unsigned int layerCount - The number of PRNG tree layers to
+    generate below this OR node
+    */
+    void seed(const std::string&, unsigned int) override;
+    /*
+    Get a pseudo-random byte of output by OR of the outputs of all children
+    Returns: uint8_t - A pseudo-random byte
+    */
+    uint8_t generate() override;
+};
+
 #endif

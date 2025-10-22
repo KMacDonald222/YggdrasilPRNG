@@ -18,19 +18,19 @@ void MatrixNode::seed(const std::string& seed, unsigned int layerCount) {
         }
         XORCount += 1;
         for (size_t i = 0; i < XORCount; i++) {
-            // Placeholder
+            m_children.push_back(new XORNode);
         }
         XORCount = 0x00;
         // Generate 0-1 AND node children
         uint8_t ANDCount = (uint8_t)seedHash[509];
         for (size_t i = 0; i < ANDCount; i++) {
-            // Placeholder
+            m_children.push_back(new ANDNode);
         }
         ANDCount = 0x00;
         // Generate 0-1 OR node children
         uint8_t ORCount = (uint8_t)seedHash[510];
         for (size_t i = 0; i < ORCount; i++) {
-            // Placeholder
+            m_children.push_back(new ORNode);
         }
         ORCount = 0x00;
         // Generate 1-2 matrix node children

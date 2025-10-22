@@ -2,7 +2,7 @@
 // Author:      Keegan MacDonald (KMacDonald222)
 // Created:     2025.10.15@10:15ADT
 
-#include <YggdrasilPRNG/Nodes.h>
+#include <YggdrasilPRNG/YggdrasilPRNG.h>
 
 #include <iostream>
 #include <bitset>
@@ -10,12 +10,15 @@
 // YGen module functions
 
 int main() {
-    MatrixNode matrix;
-    matrix.seed("Hello World!", 1);
-    for (size_t i = 0; i < 3; i++) {
-        std::cout << "Output byte " << i << ": "
-            << std::bitset<8>(matrix.generate()) << std::endl;
+    YggdrasilPRNG yprng;
+    std::cout << "Seeding Yggdrasil PRNG with \"Hello World!\"" << std::endl;
+    yprng.seed("Hello World!", 5);
+    std::cout << "Generating 512B:" << std::endl;
+    for (size_t i = 0; i < 512; i++) {
+        std::cout << std::bitset<8>(yprng.generate());
+        std::cout.flush();
     }
-    matrix.clear();
+    std::cout << std::endl << "Clearing memory" << std::endl;
+    yprng.clear();
     return 0;
 }

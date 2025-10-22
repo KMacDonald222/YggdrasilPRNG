@@ -7,14 +7,13 @@
 // YggdrasilPRNG member functions
 
 void YggdrasilPRNG::seed(const std::string& seed, unsigned int layerCount) {
-    // Placeholder
+    m_root.seed(seed, layerCount - 1);
 }
 
 uint8_t YggdrasilPRNG::generate() {
-    // Placeholder
-    return 0x00;
+    return m_root.generate();
 }
 
 void YggdrasilPRNG::clear() {
-    // Placeholder
+    m_root.clear();
 }

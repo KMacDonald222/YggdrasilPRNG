@@ -5,6 +5,8 @@
 #ifndef YGGDRASILPRNG_YGGDRASILPRNG_H
 #define YGGDRASILPRNG_YGGDRASILPRNG_H
 
+#include "Nodes.h"
+
 #include <string>
 #include <cstdint>
 
@@ -28,6 +30,10 @@ public:
     Free the PRNG tree's memory
     */
     void clear();
+
+private:
+    // The root node of the PRNG tree
+    XORNode m_root;
 };
 
 #endif
