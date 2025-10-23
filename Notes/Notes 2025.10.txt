@@ -311,4 +311,17 @@ new YGen program will be allowed to run overnight to generate as many data files
 as it can before @~08:00ADT.
 
 @09:11ADT: The 100th data file just finished generating. The data will now be
-uploaded to the GitHub repository.
+uploaded to the GitHub repository. The average time these files took to
+generate was ~325s = ~5m25s giving an average speed of ~395B/s. This speed will
+slow down exponentially as the number of layers in the tree grows, but four
+layers is satisfactory.
+
+Upon inspection of some of the generated data, the randomness is also
+satisfactory, but this will be tested today.
+
+@10:50ADT: The script to run the statistical tests is now finished and can now
+be run with a tracking script in the Tests directory.
+
+@11:49ADT: The results are all generated and they can now be compiled. The
+results text files will be uploaded to GitHub before another script is added for
+this.

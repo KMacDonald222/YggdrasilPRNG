@@ -1,0 +1,195 @@
+Tests of Distinguishability from Random
+TEST: monobit_test
+  Ones count   = 514538
+  Zeroes count = 513478
+  PASS
+  P=0.2958120785663749
+TEST: frequency_within_block_test
+  n = 1028016
+  N = 99
+  M = 10384
+  PASS
+  P=0.6567540469756681
+TEST: runs_test
+  prop  0.5005155561781139
+  tau  0.00197255925728521
+  vobs  514651.0
+  PASS
+  P=0.2042859828325201
+TEST: longest_run_ones_in_a_block_test
+  n = 1028016
+  K = 6
+  M = 10000
+  N = 75
+  chi_sq = 2.5172240109622694
+  PASS
+  P=0.8665350658353657
+TEST: binary_matrix_rank_test
+  Number of blocks 1003
+  Data bits used: 1027072
+  Data bits discarded: 944
+  Full Rank Count  =  313
+  Full Rank -1 Count =  572
+  Remainder Count =  118
+  Chi-Square =  3.8924942328059062
+  PASS
+  P=0.1428090127742115
+TEST: dft_test
+  N0 = 488307.600000
+  N1 = 488336.000000
+  PASS
+  P=0.7971474919556242
+TEST: non_overlapping_template_matching_test
+  PASS
+  P=0.9999999303162697
+TEST: overlapping_template_matching_test
+  B =  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  m =  10
+  M =  1062
+  N =  968
+  K =  5
+  model =  [352, 179, 134, 97, 68, 135]
+  v[j] =   [576, 144, 107, 54, 33, 54]
+  chisq =  2.5671052472575737
+  PASS
+  P=0.7663567073069159
+TEST: maurers_universal_test
+  sum = 903096.0362607077
+  fn = 6.203477398942894
+  FAIL
+  P=0.008115624539934726
+TEST: linear_complexity_test
+  M =  512
+  N =  2007
+  K =  6
+  chisq =  5.6085873617909385
+  P =  0.4684308037171422
+  PASS
+  P=0.4684308037171422
+TEST: serial_test
+  psi_sq_m   =  15.915269801276736
+  psi_sq_mm1 =  8.182689763605595
+  psi_sq_mm2 =  3.7896842072950676
+  delta1     =  7.732580037671141
+  delta2     =  3.3395744813606143
+  P1         =  0.46001891075358897
+  P2         =  0.5026865538104112
+  PASS
+P=0.46001891075358897
+P=0.5026865538104112
+TEST: approximate_entropy_test
+  n         =  1028016
+  m         =  3
+  Pattern 1 of 8, count = 128010
+  Pattern 2 of 8, count = 128143
+  Pattern 3 of 8, count = 128634
+  Pattern 4 of 8, count = 128691
+  Pattern 5 of 8, count = 128143
+  Pattern 6 of 8, count = 129182
+  Pattern 7 of 8, count = 128691
+  Pattern 8 of 8, count = 128522
+  phi(3)    = -4.382023
+  Pattern 1 of 16, count = 63978
+  Pattern 2 of 16, count = 64032
+  Pattern 3 of 16, count = 64059
+  Pattern 4 of 16, count = 64084
+  Pattern 5 of 16, count = 64013
+  Pattern 6 of 16, count = 64621
+  Pattern 7 of 16, count = 64615
+  Pattern 8 of 16, count = 64076
+  Pattern 9 of 16, count = 64032
+  Pattern 10 of 16, count = 64111
+  Pattern 11 of 16, count = 64575
+  Pattern 12 of 16, count = 64607
+  Pattern 13 of 16, count = 64130
+  Pattern 14 of 16, count = 64561
+  Pattern 15 of 16, count = 64076
+  Pattern 16 of 16, count = 64446
+  phi(3)    = -5.075166
+  AppEn(3)  = 0.693143
+  ChiSquare =  7.72423532321044
+  PASS
+  P=0.46086070870702334
+TEST: cumulative_sums_test
+PASS
+  PASS
+P=0.3810364437448106
+P=0.48332222163923944
+TEST: random_excursion_test
+J=515
+x = -4	chisq = 3.241153	p = 0.662862 
+x = -3	chisq = 2.770339	p = 0.735341 
+x = -2	chisq = 4.262560	p = 0.512266 
+x = -1	chisq = 14.504188	p = 0.012705 
+x = 1	chisq = 6.320768	p = 0.276246 
+x = 2	chisq = 5.058039	p = 0.408838 
+x = 3	chisq = 2.264890	p = 0.811410 
+x = 4	chisq = 5.263690	p = 0.384554 
+PASS
+  PASS
+P=0.6628624183275241
+P=0.7353412133867102
+P=0.5122656470153281
+P=0.01270486357523543
+P=0.2762459466408762
+P=0.4088382288970892
+P=0.8114095071326488
+P=0.38455385477486653
+TEST: random_excursion_variant_test
+J= 515
+x = -9	 count=588	p = 0.581174 
+x = -8	 count=601	p = 0.489009 
+x = -7	 count=631	p = 0.316121 
+x = -6	 count=636	p = 0.255637 
+x = -5	 count=588	p = 0.448332 
+x = -4	 count=532	p = 0.841318 
+x = -3	 count=510	p = 0.944454 
+x = -2	 count=507	p = 0.885566 
+x = -1	 count=521	p = 0.851697 
+x = 1	 count=471	p = 0.170378 
+x = 2	 count=451	p = 0.249596 
+x = 3	 count=429	p = 0.230769 
+x = 4	 count=413	p = 0.229655 
+x = 5	 count=403	p = 0.244723 
+x = 6	 count=394	p = 0.255637 
+x = 7	 count=393	p = 0.291740 
+x = 8	 count=375	p = 0.260028 
+x = 9	 count=320	p = 0.140578 
+PASS
+  PASS
+P=0.5811741023028039
+P=0.4890092569860507
+P=0.31612075387508315
+P=0.2556368429004304
+P=0.4483320836779125
+P=0.8413179605711693
+P=0.9444536924990754
+P=0.8855663646809168
+P=0.8516974163860168
+P=0.17037829275476976
+P=0.2495955041607127
+P=0.2307688096267067
+P=0.22965516316849785
+P=0.24472255091358497
+P=0.2556368429004304
+P=0.29173966035302956
+P=0.26002790284027455
+P=0.14057842029669956
+
+SUMMARY
+-------
+monobit_test                             0.2958120785663749 PASS
+frequency_within_block_test              0.6567540469756681 PASS
+runs_test                                0.2042859828325201 PASS
+longest_run_ones_in_a_block_test         0.8665350658353657 PASS
+binary_matrix_rank_test                  0.1428090127742115 PASS
+dft_test                                 0.7971474919556242 PASS
+non_overlapping_template_matching_test   0.9999999303162697 PASS
+overlapping_template_matching_test       0.7663567073069159 PASS
+maurers_universal_test                   0.008115624539934726 FAIL
+linear_complexity_test                   0.4684308037171422 PASS
+serial_test                              0.46001891075358897 PASS
+approximate_entropy_test                 0.46086070870702334 PASS
+cumulative_sums_test                     0.3810364437448106 PASS
+random_excursion_test                    0.01270486357523543 PASS
+random_excursion_variant_test            0.14057842029669956 PASS

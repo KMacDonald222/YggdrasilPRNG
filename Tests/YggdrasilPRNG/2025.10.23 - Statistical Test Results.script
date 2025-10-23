@@ -1,0 +1,207 @@
+Script started on 2025-10-23 10:52:50-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="192" LINES="30"]
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ python3 ../../Scripts/Statistical_Tests.py
+[?2004lRunning tests on "../../Tests/Statistical_Tests/Data/97.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/97.bin > ../../Tests/Statistical_Tests/Results/97.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/34.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/34.bin > ../../Tests/Statistical_Tests/Results/34.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/22.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/22.bin > ../../Tests/Statistical_Tests/Results/22.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/23.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/23.bin > ../../Tests/Statistical_Tests/Results/23.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/41.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/41.bin > ../../Tests/Statistical_Tests/Results/41.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/82.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/82.bin > ../../Tests/Statistical_Tests/Results/82.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/81.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/81.bin > ../../Tests/Statistical_Tests/Results/81.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/42.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/42.bin > ../../Tests/Statistical_Tests/Results/42.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/74.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/74.bin > ../../Tests/Statistical_Tests/Results/74.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/18.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/18.bin > ../../Tests/Statistical_Tests/Results/18.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/88.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/88.bin > ../../Tests/Statistical_Tests/Results/88.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/4.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/4.bin > ../../Tests/Statistical_Tests/Results/4.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/73.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/73.bin > ../../Tests/Statistical_Tests/Results/73.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/77.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/77.bin > ../../Tests/Statistical_Tests/Results/77.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/75.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/75.bin > ../../Tests/Statistical_Tests/Results/75.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/11.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/11.bin > ../../Tests/Statistical_Tests/Results/11.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/31.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/31.bin > ../../Tests/Statistical_Tests/Results/31.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/38.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/38.bin > ../../Tests/Statistical_Tests/Results/38.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/95.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/95.bin > ../../Tests/Statistical_Tests/Results/95.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/70.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/70.bin > ../../Tests/Statistical_Tests/Results/70.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/35.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/35.bin > ../../Tests/Statistical_Tests/Results/35.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/86.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/86.bin > ../../Tests/Statistical_Tests/Results/86.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/54.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/54.bin > ../../Tests/Statistical_Tests/Results/54.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/12.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/12.bin > ../../Tests/Statistical_Tests/Results/12.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/83.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/83.bin > ../../Tests/Statistical_Tests/Results/83.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/96.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/96.bin > ../../Tests/Statistical_Tests/Results/96.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/91.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/91.bin > ../../Tests/Statistical_Tests/Results/91.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/30.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/30.bin > ../../Tests/Statistical_Tests/Results/30.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/27.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/27.bin > ../../Tests/Statistical_Tests/Results/27.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/60.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/60.bin > ../../Tests/Statistical_Tests/Results/60.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/14.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/14.bin > ../../Tests/Statistical_Tests/Results/14.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/69.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/69.bin > ../../Tests/Statistical_Tests/Results/69.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/43.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/43.bin > ../../Tests/Statistical_Tests/Results/43.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/44.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/44.bin > ../../Tests/Statistical_Tests/Results/44.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/53.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/53.bin > ../../Tests/Statistical_Tests/Results/53.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/36.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/36.bin > ../../Tests/Statistical_Tests/Results/36.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/7.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/7.bin > ../../Tests/Statistical_Tests/Results/7.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/47.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/47.bin > ../../Tests/Statistical_Tests/Results/47.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/94.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/94.bin > ../../Tests/Statistical_Tests/Results/94.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/71.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/71.bin > ../../Tests/Statistical_Tests/Results/71.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/46.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/46.bin > ../../Tests/Statistical_Tests/Results/46.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/98.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/98.bin > ../../Tests/Statistical_Tests/Results/98.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/52.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/52.bin > ../../Tests/Statistical_Tests/Results/52.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/25.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/25.bin > ../../Tests/Statistical_Tests/Results/25.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/62.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/62.bin > ../../Tests/Statistical_Tests/Results/62.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/8.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/8.bin > ../../Tests/Statistical_Tests/Results/8.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/93.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/93.bin > ../../Tests/Statistical_Tests/Results/93.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/78.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/78.bin > ../../Tests/Statistical_Tests/Results/78.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/61.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/61.bin > ../../Tests/Statistical_Tests/Results/61.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/39.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/39.bin > ../../Tests/Statistical_Tests/Results/39.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/92.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/92.bin > ../../Tests/Statistical_Tests/Results/92.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/50.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/50.bin > ../../Tests/Statistical_Tests/Results/50.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/9.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/9.bin > ../../Tests/Statistical_Tests/Results/9.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/80.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/80.bin > ../../Tests/Statistical_Tests/Results/80.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/16.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/16.bin > ../../Tests/Statistical_Tests/Results/16.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/37.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/37.bin > ../../Tests/Statistical_Tests/Results/37.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/79.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/79.bin > ../../Tests/Statistical_Tests/Results/79.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/89.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/89.bin > ../../Tests/Statistical_Tests/Results/89.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/57.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/57.bin > ../../Tests/Statistical_Tests/Results/57.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/99.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/99.bin > ../../Tests/Statistical_Tests/Results/99.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/21.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/21.bin > ../../Tests/Statistical_Tests/Results/21.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/19.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/19.bin > ../../Tests/Statistical_Tests/Results/19.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/84.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/84.bin > ../../Tests/Statistical_Tests/Results/84.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/64.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/64.bin > ../../Tests/Statistical_Tests/Results/64.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/63.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/63.bin > ../../Tests/Statistical_Tests/Results/63.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/58.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/58.bin > ../../Tests/Statistical_Tests/Results/58.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/67.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/67.bin > ../../Tests/Statistical_Tests/Results/67.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/29.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/29.bin > ../../Tests/Statistical_Tests/Results/29.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/13.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/13.bin > ../../Tests/Statistical_Tests/Results/13.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/2.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/2.bin > ../../Tests/Statistical_Tests/Results/2.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/66.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/66.bin > ../../Tests/Statistical_Tests/Results/66.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/48.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/48.bin > ../../Tests/Statistical_Tests/Results/48.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/45.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/45.bin > ../../Tests/Statistical_Tests/Results/45.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/28.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/28.bin > ../../Tests/Statistical_Tests/Results/28.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/32.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/32.bin > ../../Tests/Statistical_Tests/Results/32.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/72.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/72.bin > ../../Tests/Statistical_Tests/Results/72.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/76.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/76.bin > ../../Tests/Statistical_Tests/Results/76.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/59.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/59.bin > ../../Tests/Statistical_Tests/Results/59.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/65.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/65.bin > ../../Tests/Statistical_Tests/Results/65.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/1.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/1.bin > ../../Tests/Statistical_Tests/Results/1.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/5.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/5.bin > ../../Tests/Statistical_Tests/Results/5.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/55.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/55.bin > ../../Tests/Statistical_Tests/Results/55.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/24.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/24.bin > ../../Tests/Statistical_Tests/Results/24.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/90.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/90.bin > ../../Tests/Statistical_Tests/Results/90.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/68.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/68.bin > ../../Tests/Statistical_Tests/Results/68.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/3.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/3.bin > ../../Tests/Statistical_Tests/Results/3.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/40.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/40.bin > ../../Tests/Statistical_Tests/Results/40.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/15.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/15.bin > ../../Tests/Statistical_Tests/Results/15.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/56.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/56.bin > ../../Tests/Statistical_Tests/Results/56.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/10.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/10.bin > ../../Tests/Statistical_Tests/Results/10.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/33.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/33.bin > ../../Tests/Statistical_Tests/Results/33.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/17.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/17.bin > ../../Tests/Statistical_Tests/Results/17.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/51.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/51.bin > ../../Tests/Statistical_Tests/Results/51.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/87.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/87.bin > ../../Tests/Statistical_Tests/Results/87.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/0.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/0.bin > ../../Tests/Statistical_Tests/Results/0.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/6.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/6.bin > ../../Tests/Statistical_Tests/Results/6.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/26.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/26.bin > ../../Tests/Statistical_Tests/Results/26.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/20.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/20.bin > ../../Tests/Statistical_Tests/Results/20.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/85.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/85.bin > ../../Tests/Statistical_Tests/Results/85.bin.txt
+Running tests on "../../Tests/Statistical_Tests/Data/49.bin"
+> python3 ../../Tests/Statistical_Tests/sp800_22_tests/sp800_22_tests.py ../../Tests/Statistical_Tests/Data/49.bin > ../../Tests/Statistical_Tests/Results/49.bin.txt
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ [?2004l
+exit
+
+Script done on 2025-10-23 11:48:55-03:00 [COMMAND_EXIT_CODE="130"]
