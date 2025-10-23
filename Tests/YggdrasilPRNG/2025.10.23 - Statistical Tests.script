@@ -1,0 +1,749 @@
+Script started on 2025-10-23 00:08:05-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="192" LINES="41"]
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ make
+[?2004lmake ../../Binaries/Linux/libYggdrasilPRNG.a
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ \
+	-o ../../Source/YggdrasilPRNG/YggdrasilPRNG.o \
+	-c ../../Source/YggdrasilPRNG/YggdrasilPRNG.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/Utilities.o \
+	-c ../../Source/YggdrasilPRNG/Utilities.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/Node.o \
+	-c ../../Source/YggdrasilPRNG/Node.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/LFSRNode.o \
+	-c ../../Source/YggdrasilPRNG/LFSRNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ \
+	-o ../../Source/YggdrasilPRNG/MatrixNode.o \
+	-c ../../Source/YggdrasilPRNG/MatrixNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/XORNode.o \
+	-c ../../Source/YggdrasilPRNG/XORNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/ANDNode.o \
+	-c ../../Source/YggdrasilPRNG/ANDNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/ORNode.o \
+	-c ../../Source/YggdrasilPRNG/ORNode.cpp
+ar rcs ../../Binaries/Linux/libYggdrasilPRNG.a ../../Source/YggdrasilPRNG/YggdrasilPRNG.o \
+	../../Source/YggdrasilPRNG/Utilities.o ../../Source/YggdrasilPRNG/Node.o \
+	../../Source/YggdrasilPRNG/LFSRNode.o ../../Source/YggdrasilPRNG/MatrixNode.o \
+	../../Source/YggdrasilPRNG/XORNode.o ../../Source/YggdrasilPRNG/ANDNode.o \
+	../../Source/YggdrasilPRNG/ORNode.o
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+make ../../Binaries/Linux/YGen
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Include/ -o ../../Source/YGen/YGen.o \
+	-c ../../Source/YGen/YGen.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -o ../../Binaries/Linux/YGen ../../Source/YGen/YGen.o -L../../Binaries/Linux/ -lYggdrasilPRNG -L../../Vendor/Libraries/ -lsha
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lWriting 0.bin
+Seed: "4Tzs-DJ~Nt0_$3}nKXlc&^y^cPU`!+bkKFI`jr5bQU{/3l{s*dAaod^qS^VYcWo+"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+186s elapsed
+Average time: 186s
+Clearing
+Writing 1.bin
+Seed: "2brQsBR*A(NizF1[*g[bjy'g9s$-tx2Ay.;Wz[(~1B*^6]yt/Q/It"OI]YyM`G[E"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+543s elapsed
+Average time: 364.5s
+Clearing
+Writing 2.bin
+Seed: "4nFJF]OmvB<G:vfUqE39~"w.?~-`L#j|:O#!7W{HDpoY0t,%c~.icaG1~"G-ePK`"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+519s elapsed
+Average time: 416s
+Clearing
+Writing 3.bin
+Seed: "I]g:\yC<[:Vh]t+'y0$`00H\M[%:8;v:oGqI$>Gw}138//jd){3EHp?.*j\vEP;S"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+503s elapsed
+Average time: 437.75s
+Clearing
+Writing 4.bin
+Seed: "wM1fK&H#[p;sP$v$W#8J>Mh^WB6F'!y<SE2HQ(Qiel`>:A@"4\FH7{S8Td{pjq=h"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+923s elapsed
+Average time: 534.8s
+Clearing
+Writing 5.bin
+Seed: "?U}P*JdrVIp:jw+SRXEd|wQNEIi{Z/zYttT7@bD@JTc<|||_".t_?(##,_WBQ`zo"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+168s elapsed
+Average time: 473.667s
+Clearing
+Writing 6.bin
+Seed: ".xAGye8*c-k"Kfn^D6b#A$L<aM.Q{cj-`Kw#})::`grpl4`}:1W;k8S0?qfr,\IX"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+239s elapsed
+Average time: 440.143s
+Clearing
+Writing 7.bin
+Seed: "ej^x>!sDmOSCyx'tDs}O%L3k!91yio1my=Ow,^~KZXmcaIv#goWqef`kTH9!V|s>"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+113s elapsed
+Average time: 399.25s
+Clearing
+Writing 8.bin
+Seed: "L^Ai"FSVHkYH<y-dSmuWrZ&p6A:7UnK5>k[|P-:CATj,"Z!}r`QNeC#QcYcbrM6p"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+79s elapsed
+Average time: 363.667s
+Clearing
+Writing 9.bin
+Seed: "cd0"]5.t3I"EMX.i2]WL:$1x&3ydv(.x+nt6XSEfFA('C7Fj~GVa0bCBK~F%O3hG"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+219s elapsed
+Average time: 349.2s
+Clearing
+Writing 10.bin
+Seed: ";FrsCaChB-E3d9[i|n9J]_0d"|n)C/V<f+\H{w|T{Y1vmT36l"u%*J*j$1>6~?Jk"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+466s elapsed
+Average time: 359.818s
+Clearing
+Writing 11.bin
+Seed: "_3<iF+g,|N<g6`RXC_H0ZUYIaWuga#q+l[z:JLSDyP((v%LXa,=~sp8,q&DrP?8g"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+308s elapsed
+Average time: 355.5s
+Clearing
+Writing 12.bin
+Seed: "R+11@?j5}>u]#kq$*&(f1B@X96}dKG91XQ&F|"p*|92cZXlMK?"qBY{)9ls>RHFU"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+277s elapsed
+Average time: 349.462s
+Clearing
+Writing 13.bin
+Seed: "C=E'NTJH8q)m}`d#`?ygcr:R2[|zz/y!r@C$A=R*H^z~l2*-Gm'(IRF)0/]OzR;;"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+252s elapsed
+Average time: 342.5s
+Clearing
+Writing 14.bin
+Seed: ".xEzOv=wgR1syp*kGK>oGD3:2XKGT5b,&GWBg[c[j3)NXXX3MaWt#f]kh3"fN<CA"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+190s elapsed
+Average time: 332.333s
+Clearing
+Writing 15.bin
+Seed: "#D1p"3H5_'<O.?wlzyJhIc,P6]?yQ@dZ54}G+Ar#w]'U]<k<vTf#bCXMvXp_$tP]"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+263s elapsed
+Average time: 328s
+Clearing
+Writing 16.bin
+Seed: "@*aU8r@()y(3A>1W<L$y[H)NJe#[CYlKLl4zHln,Obf]`LpCBz~t^|lU>|=!SC-I"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+210s elapsed
+Average time: 321.059s
+Clearing
+Writing 17.bin
+Seed: "}?&~0`CdG*'^Y+8Fq[Y17)`L$"R!Yh9R6wXV!Ed7=Zt;:^a-EY"_Nw!Ws,@"$r{p"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+620s elapsed
+Average time: 337.667s
+Clearing
+Writing 18.bin
+Seed: "S|p./s%_x36s\LJy0Fo2hv4ESl~CHT"zNmcmJn3^V}e\FNSu,m!E7k94wol#&88~"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+329s elapsed
+Average time: 337.211s
+Clearing
+Writing 19.bin
+Seed: "/Pri@Z|#TyxDqvXN7D,>}^Hpz>x=6Kr%FNs7[=\lPS}%sQYE.A@=LO^)M91<>,h#"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+993s elapsed
+Average time: 370s
+Clearing
+Writing 20.bin
+Seed: "-`q#")tMHmWZhZI%zPC)4N~vb6t`j`i/%D2@]~T`rUfD/{8d*p}'#>R$4)jS;sr`"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+170s elapsed
+Average time: 360.476s
+Clearing
+Writing 21.bin
+Seed: "VY7oD5\?fZC$"q&j5fF[3Cx{RLKm#@S$F4x9P"8?aq#x6|6:ar9IT_APBl@KsZ]X"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+384s elapsed
+Average time: 361.545s
+Clearing
+Writing 22.bin
+Seed: "i:-csebsujU%e6f4C]+AJSpl#wVaa]c9OT-^XS4wgd609-Tqk_:TI-$Q+$:sCxG'"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+154s elapsed
+Average time: 352.522s
+Clearing
+Writing 23.bin
+Seed: ":w2<t_t`u$PIvOe5Ez3=|[7&wHee$)A~lhX5>wKs5EfFs9pbOY[IqeURLYV;NAAe"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+698s elapsed
+Average time: 366.917s
+Clearing
+Writing 24.bin
+Seed: "IC9^Yy3j@8}ac9b:mUD2dy>P1?0|Z)>M=M,;)~$"]c"V-yQ@x.9`WNu3+JxQYA3;"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+285s elapsed
+Average time: 363.64s
+Clearing
+Writing 25.bin
+Seed: "=fqGl?CE1ZE<cuZESo$Ugec<{ENR4:mVb2GmGi:&&Z$o>(S:2@P8^"5Y~xUj.^jZ"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+154s elapsed
+Average time: 355.577s
+Clearing
+Writing 26.bin
+Seed: "[Pq>d-l)pu4ni1iP8dc.?Mx~)woN8y=~sHev<p-m9?EX`M=}|U=|L}?~q[[DQ$3o"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+298s elapsed
+Average time: 353.444s
+Clearing
+Writing 27.bin
+Seed: "-M98!ZZ;Y3s4:(xpIOj/I8zY!SGWBo){!zFH352hNZQ*O{dBG=a]f`'^<c&YrX:<"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+604s elapsed
+Average time: 362.393s
+Clearing
+Writing 28.bin
+Seed: "1B$Jlm:d_L+$#u60L6iQ_F!*&OMdQH`w8k%.Bg@RRTBA{&p#,CZ9hFB|.[x]`DP{"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+232s elapsed
+Average time: 357.897s
+Clearing
+Writing 29.bin
+Seed: "{~R]^.kCr_29XW'Azvo6g|FE8#>{L{%DSBwD?L6;CNjE0G4O!,z&[%Rf{|<#&hL%"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+266s elapsed
+Average time: 354.833s
+Clearing
+Writing 30.bin
+Seed: "(&8*XTJEM<jbD[|KqtW*3[{AMp3/w}4kf"y#:m7HjV*{]@CJ`y'("O9I#<7eq:\w"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+234s elapsed
+Average time: 350.935s
+Clearing
+Writing 31.bin
+Seed: "{<4*jQ\sRHkk9+>}q\@mi'?q]7/J2}k/_]M?06,g{&q1Zovu*26vY5-'")6E$;d?"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+68s elapsed
+Average time: 342.094s
+Clearing
+Writing 32.bin
+Seed: "pQzEbWK|*fA+.al63W^67w#3lo&u(q/d^Y&mZWgM!&EE&|)pRaBdwJLNc.mq}L/Z"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+258s elapsed
+Average time: 339.545s
+Clearing
+Writing 33.bin
+Seed: "96_[ixfoj(T:#*-Z(rh0fTch'\C0fb]U8JmV^'ouKm;T`^,]2F#7DlT?FvO)xhJ)"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+406s elapsed
+Average time: 341.5s
+Clearing
+Writing 34.bin
+Seed: "Qb)@,dbi;'gVHDo(8"Aqht\+\i@"\Q^lRaspdtC.:I.@-MReJ'u:QPn0c|6,K'I2"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+82s elapsed
+Average time: 334.086s
+Clearing
+Writing 35.bin
+Seed: "'fWZyDD.-b1!OxkCTK,Oz)dG$9dUk_1G:2L/%o<vpD1#fRKe1iS%xW-h0\g~5M6G"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+282s elapsed
+Average time: 332.639s
+Clearing
+Writing 36.bin
+Seed: "}wfd02D%ljNq~yu6Lsq*tHuI1FN_rz'0ABS_jAVuKNPPqpbg7'uFdT[JzgAV5"-%"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+188s elapsed
+Average time: 328.73s
+Clearing
+Writing 37.bin
+Seed: "YiVm(V6.Oa[$p]q!q06tiZiM%I8p$d?H-a>za4XOK;Yeo}^43'DQv_35.:/2>Zp9"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+534s elapsed
+Average time: 334.132s
+Clearing
+Writing 38.bin
+Seed: "enOeXQ>MlWQ`|!JCy=sY2AjfVI8TM@i:ub`wRy*#z$8tK"Vn9s+:>abT*O[~V~Vu"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+149s elapsed
+Average time: 329.385s
+Clearing
+Writing 39.bin
+Seed: "!a',yJF@[{`3p`V#.MY'+Zpf[&%nMF8SGjqjSa+-tr>8XTqvL}RC>lH->R$)x'Ii"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+350s elapsed
+Average time: 329.9s
+Clearing
+Writing 40.bin
+Seed: "%dr@d8sw%;JHpZ@f>Y&"oUM=-V2N')V1ssjvFGXPc6w'-3BO68KAhw+.x.-TN=a%"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+301s elapsed
+Average time: 329.195s
+Clearing
+Writing 41.bin
+Seed: "J9g]|#j"]KSjttXE&M4}oBR-?ij{ZjX8,igS_\}KfM>D%W7R8R_!,&rWu1O>P=L["
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+270s elapsed
+Average time: 327.786s
+Clearing
+Writing 42.bin
+Seed: "/SkQmdF'|D?fE7bs3+>~eq!y'Vx-m*#_Fs^<BQ];u]Ad~CviTunX0}blOD!f-Kww"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+306s elapsed
+Average time: 327.279s
+Clearing
+Writing 43.bin
+Seed: "h7tIdM4C5$FkLg,5`K7|$NfXq^iHVJi#vGQDs?fDj_{U"-4B`R;94~=A_Z7M8UUI"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+78s elapsed
+Average time: 321.614s
+Clearing
+Writing 44.bin
+Seed: "`0mXP'`YM.,*oh9TY$i7(Zm~DYRq,-YXfpAU+fXD#v="2fQ5pdRdhjiK&Z~5\#h~"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+218s elapsed
+Average time: 319.311s
+Clearing
+Writing 45.bin
+Seed: "y&/psC<aXOx4U{}(vKr2T`r^4wqZeCE2P3W&%Um&89;7G9vgzS8xx$iGfyK0!o";"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+125s elapsed
+Average time: 315.087s
+Clearing
+Writing 46.bin
+Seed: "XTH&ST?f8\S}$sai)NKm,T>@"IrcXoXZmJL$3KoQ5^(oe(Bt@l6z$4gg+D8}RlSi"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+723s elapsed
+Average time: 323.766s
+Clearing
+Writing 47.bin
+Seed: "?J+2.5x#r=wA`XTho4LxN<3%A"d'7bE6KV}8f;rw&[bn;V/Je-^<8\hnQkJcln8a"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+410s elapsed
+Average time: 325.562s
+Clearing
+Writing 48.bin
+Seed: "*G9sc%U(xV1<Vg^~'<cj=jw7.%9Kxb)0IyH)i1YLc5*X-U@&Rjv8s'UR18G#9;sw"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+207s elapsed
+Average time: 323.143s
+Clearing
+Writing 49.bin
+Seed: "?Zl76pxN/l0)%,b!Gwoe<nayA^6o1D-FH!{{:pFUFvJP<);#-(m8b=_!xw:$eL9+"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+377s elapsed
+Average time: 324.22s
+Clearing
+Writing 50.bin
+Seed: "R1j{W|M1pB"=-R/hGMU&dLOGm(0'/d8;5'86-aM%B*BrFbD-{yx:(_!`ZqWDuj?$"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+125s elapsed
+Average time: 320.314s
+Clearing
+Writing 51.bin
+Seed: "G7\w7ghnuI5e(*\!-RczI#FMzGqYQp&B!1XoMj1^S_)Ge4N\bP?(,$AW0QZfkL^+"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+134s elapsed
+Average time: 316.731s
+Clearing
+Writing 52.bin
+Seed: "+JfESL0P@FBl(o%p#$dF{EH3/6NK</Boi^<fWNV#sB}6PZBX*E2!8(j*AbX,Ay_*"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+260s elapsed
+Average time: 315.66s
+Clearing
+Writing 53.bin
+Seed: "9(tkBt}>Um4Oqk-e|Sk2&.\7/rj`\?ninLt}$=rD#Br?L&3%F[nR_&dPe=|YQ8&$"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+273s elapsed
+Average time: 314.87s
+Clearing
+Writing 54.bin
+Seed: ">5c#buL$ai#_|lW/Do;Ta.9e)3iG:|P|ERcFqN9qash:I#U="qk"}.1jh9|cIJw="
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+469s elapsed
+Average time: 317.673s
+Clearing
+Writing 55.bin
+Seed: "FD"W'Kr'@y=Qgmh2HrzA:%Jc.D46=^Xx9>y%I\2QTT6Zk[7R(Ls$Vgl.);$11^DP"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+302s elapsed
+Average time: 317.393s
+Clearing
+Writing 56.bin
+Seed: "$!~Rwh7ufSyq0K&zA4ivQuTF|@^ANP\WVu]w1~;MYU@n4}R%D~5tz4Y.l(>e#[f$"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+321s elapsed
+Average time: 317.456s
+Clearing
+Writing 57.bin
+Seed: "{.f.E!kH~r?9lR.}W$ma[p.D3W&m]{v6QF%/6u6-=6~@cDVY7mde1!*(CUa:+vH*"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+680s elapsed
+Average time: 323.707s
+Clearing
+Writing 58.bin
+Seed: "!RM=_>iHJ*9LQ9OdA"7gXu:z|:/l'g>CX_t}(1A,])8ky1[exZkz?f#t12Jc9*E-"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+266s elapsed
+Average time: 322.729s
+Clearing
+Writing 59.bin
+Seed: "Yc4+J%O2?b=CHjGjoR8[Wq_cX/4-7*@0q-1eA|6/vdchm*qFE#<Gy**bNs=z5.P~"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+203s elapsed
+Average time: 320.733s
+Clearing
+Writing 60.bin
+Seed: ")v$0;qp:t'3K4YqoH[UkG&lte#XP1R\;{z^N\`INWqx5|SYBlXLRKcp}%+I-Jd&!"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+496s elapsed
+Average time: 323.607s
+Clearing
+Writing 61.bin
+Seed: "2S]Wx1Oy,qI=(Msz9iv>k0{uGAL\#,vk\}lRAe|xv@}9]l{#tngJ@>#8ZTiHqI<K"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+358s elapsed
+Average time: 324.161s
+Clearing
+Writing 62.bin
+Seed: "CiG2n~ENI,b1*}j66qun]3~sb*fsWchD0O%C]Op1-;IyO"J?=jm^=s3[fN)!P<Jf"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+254s elapsed
+Average time: 323.048s
+Clearing
+Writing 63.bin
+Seed: "_]&Jh2qXXda=?)Q=>#C0akh5Y<=SuaXkUK>gr]$}'$K'>1nw9PLOeT>@:PAp:CEP"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+679s elapsed
+Average time: 328.609s
+Clearing
+Writing 64.bin
+Seed: "=@VIw$@SO=o+<Go6Ae?FcyM<s==n|:hLY#u?+b"%SlXQ"_1,u1cx$O/b6+p`&w_)"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+133s elapsed
+Average time: 325.6s
+Clearing
+Writing 65.bin
+Seed: "40owQlgOBi4,>)|.qwVzqu1B-Vgy"w[GMHhH<nv.B$v/UqxpR<\&,V8*;T-R:jC&"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+564s elapsed
+Average time: 329.212s
+Clearing
+Writing 66.bin
+Seed: ":J]{cPQD._2,6FNd@h)z@D[Cwi.r'b3=KX4M=zppq,NB2`EjMUO]x6vYTTvqUD&5"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+362s elapsed
+Average time: 329.702s
+Clearing
+Writing 67.bin
+Seed: "`'w"VR=_o4[V(w$A:,ts#]w@mW<mz$W%`<gbOX+hgJ@u^+U!9{z,L~zdBBp~5q)_"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+313s elapsed
+Average time: 329.456s
+Clearing
+Writing 68.bin
+Seed: "n"rh>8]f<Bzi[z(g'[#is7lT*FZ.V}Onp%/os}.\UcCm1R,YjGlH{BFggJ$gD,t<"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+374s elapsed
+Average time: 330.101s
+Clearing
+Writing 69.bin
+Seed: "H>le+J/LM1cs<Z:756tD&Y(sNSy;\X[1VE5+[j@eQjCN*,z.j,1:Bp]]mR(^TGmT"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+128s elapsed
+Average time: 327.214s
+Clearing
+Writing 70.bin
+Seed: "kWK#lRm!~OT}=>=AVSVBmo|y^ij$PADeB[&Mk?[pNmie0/$0'F+ITll$uuOo?'sB"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+170s elapsed
+Average time: 325s
+Clearing
+Writing 71.bin
+Seed: "ofnD4^T"x!1+G01c|,_}JbXiBQwA=]1GY\jhFh4h()>Uzzb/c+SLt\TU-u/h{!{R"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+216s elapsed
+Average time: 323.486s
+Clearing
+Writing 72.bin
+Seed: "Acd59M=CB0wg}y%:\C^Nw$7Mdm?"{+{[tvXI*]kO#7Ub)E<46i<I{J/:V.rN-95J"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+438s elapsed
+Average time: 325.055s
+Clearing
+Writing 73.bin
+Seed: "K7'X~H-*t-)iumRGuOomy{8y=$+h.B:8([k}zA@X_"kli!"2VkU>27BTq[fOubb8"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+184s elapsed
+Average time: 323.149s
+Clearing
+Writing 74.bin
+Seed: "T-1x+i?hej,=)]UK#T*-fPjv7\pGV;}]&vQdIP0{dn4s^3iPbvf6)]&xnb#*WX1I"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+324s elapsed
+Average time: 323.16s
+Clearing
+Writing 75.bin
+Seed: "xw_kqGctTM=E|/.w?#&)xTmP?|DW"jJ.6~J!6_aeCRIX;h>\)kJ=$Vh#:)$r>TQJ"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+159s elapsed
+Average time: 321s
+Clearing
+Writing 76.bin
+Seed: ".z-$pQ*<MVU7h<g<hQO_-a?6piDo!.czcS8'NA]zwnL30SF,N/Nd/+P|a,ig:0L<"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+435s elapsed
+Average time: 322.481s
+Clearing
+Writing 77.bin
+Seed: "i>]V/n`aFqI:no[~{5$RxYLCvTIq9.[',l'wybB$sje5C'l\!um3<X%sWTNkrf^}"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+376s elapsed
+Average time: 323.167s
+Clearing
+Writing 78.bin
+Seed: ";HpUJQ#!f&-HI!cOao<x_hU+~7b<Rm_[U6=3bu966Z}tG:&^9jjEri'";X}=)kj("
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+194s elapsed
+Average time: 321.532s
+Clearing
+Writing 79.bin
+Seed: ";A'W?%i5Jb#\w:1)eP]AXp,,sQp7~yvvZR<Y!59PLrkm=Qb'5U"hpT%70?T\xt:1"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+704s elapsed
+Average time: 326.312s
+Clearing
+Writing 80.bin
+Seed: "psf:CTKn)?zHPFd?Ez7Tyr5{;d7SB2?QZ4_1cBTr~xY;hgUMLg5(CQ!<>[:~au;Z"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+626s elapsed
+Average time: 330.012s
+Clearing
+Writing 81.bin
+Seed: "#76%ne1{H5NO-8`bTLpwG:.$9]J9{5nVRYFj#m10'|d&H4o`u3Bfza({T.GM#>7Z"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+177s elapsed
+Average time: 328.146s
+Clearing
+Writing 82.bin
+Seed: "XsnF4Tu~NC+ul5~5O1PsGE0`2:r0}D]:aGAJE?OsCGRN_'y$d{1JWQod_5S%ol~o"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+481s elapsed
+Average time: 329.988s
+Clearing
+Writing 83.bin
+Seed: ""GYB%=>7x|`]R#C?V$IX/c~-7YA~oF|l-<+wOp*+jnKf:me":{TVuY-G!_M:V^6m"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+202s elapsed
+Average time: 328.464s
+Clearing
+Writing 84.bin
+Seed: "#xNWRANf}CloP\0)M8K^maS{q4nrp.3xav>RV+X}]n8i&X>/l*5CocU46*A~6icM"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+754s elapsed
+Average time: 333.471s
+Clearing
+Writing 85.bin
+Seed: "3134s5CLX)?K{x930TkDb$nMRN[3bU|JaC{,n;j)K8Z@K[k?mu#[4:e`IWI('@.W"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+235s elapsed
+Average time: 332.326s
+Clearing
+Writing 86.bin
+Seed: "K-uXlI+b:"i%9.jA<+{1mxHa>\(UC7'md:(]D~UYW#*l1"_yoj%`L=`Jl\JN!5Zj"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+494s elapsed
+Average time: 334.184s
+Clearing
+Writing 87.bin
+Seed: "`{#iTClUK>kqu1\8PE}`:.(6{,??@di7"_\|T%}I#4ZdKt-EXJ$<i<Ia;&?Cq8pm"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+180s elapsed
+Average time: 332.432s
+Clearing
+Writing 88.bin
+Seed: "D(6wUE%C*(FXhw1jkk6sit.#g,KwkeNO}ypN@z\:n`S/!zI_Ot9W[&$YJUzUY+8""
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+481s elapsed
+Average time: 334.101s
+Clearing
+Writing 89.bin
+Seed: "\C(w@4'|(p\PT2%7!t9.5,B|r~Ov"1r-#g+)P9k##$,B-Hn'!B|-z;5VAy:'E[mN"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+108s elapsed
+Average time: 331.589s
+Clearing
+Writing 90.bin
+Seed: "Ye@SS+AAa<1=$T*)Ai1Z#L/4)VfTns6_Bo*t58>6KEc]xp4XxK!gA10PbU9]+UJ["
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+384s elapsed
+Average time: 332.165s
+Clearing
+Writing 91.bin
+Seed: "n'L.$($][lm:`;<DfZ(^5DALx(ep({&bOY/,MIq5>2`zdxh81vtLYUw`*FUWXHY-"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+85s elapsed
+Average time: 329.478s
+Clearing
+Writing 92.bin
+Seed: "5Cnw-IG9_^{}9?GPu~GxZ@DMNx90j=g]tt:(@By<N;qb;W:|BB,`JasBC^qMxw5V"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+198s elapsed
+Average time: 328.065s
+Clearing
+Writing 93.bin
+Seed: "V`KChnZUI|adQ:y,,Vc6au&@5cTHEeIzJs!Q5FP{ZPwULZ'8Z/TZ>%^4&FqQ(Y|,"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+145s elapsed
+Average time: 326.117s
+Clearing
+Writing 94.bin
+Seed: "va]F%iYJYz49dfb@EU^#$R=:w&Mk_G*lHG"RO?1Ry)5G|68Z5.&opDkR0Wg`Ht=o"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+312s elapsed
+Average time: 325.968s
+Clearing
+Writing 95.bin
+Seed: "ZN^TM=0)GV;AgiERGQ%at|"J:3(DBF"Gs@z$.O>eOT%a!ORM5B{DWomR'1uylr$J"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+308s elapsed
+Average time: 325.781s
+Clearing
+Writing 96.bin
+Seed: "y8Sc1R6:0qv'k+8\S`<]\0-qQ)TggCPKp8M'e<RT]+pDi#xfiu/@JpyEe"_-ZFa}"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+218s elapsed
+Average time: 324.67s
+Clearing
+Writing 97.bin
+Seed: "{+Pwo6v&CPP),+:GmUNa(_%s*VI+`*%.eAUtl|5}Kai7+d{3c^JqW]9(]w~Tk_'o"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+289s elapsed
+Average time: 324.306s
+Clearing
+Writing 98.bin
+Seed: "-'M!Qx?Fxi{]-kX]:6JSZx^s/MqJC{cs9|yery)]L@&b+(\*u4%yGQVfHr}jjwGX"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+88s elapsed
+Average time: 321.919s
+Clearing
+Writing 99.bin
+Seed: "q%g78:f>Xrz|6?hF3+j(&ju\`n#O90-$/,q&SAkV<9P38Wn:{w%Z64t_'cFlRv|q"
+Generating
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 
+581s elapsed
+Average time: 324.51s
+Clearing
+Writing 100.bin
+Seed: "<-2Qq=-nf5;T6JOykY2;h!M$ir|Z=ou0$B5a{Vnx5(:QXKt&8~IVGuE}QYShr+Wb"
+Generating
+0%, ^C
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ rm ../../Tests/Statistical_Tests/Data/100.bin
+[?2004l[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ make clean
+[?2004lrm ../../Source/YggdrasilPRNG/*.o
+rm ../../Binaries/Linux/libYggdrasilPRNG.a
+rm ../../Source/YGen/*.o
+rm ../../Binaries/Linux/YGen
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ [?2004l
+exit
+
+Script done on 2025-10-23 09:11:19-03:00 [COMMAND_EXIT_CODE="0"]

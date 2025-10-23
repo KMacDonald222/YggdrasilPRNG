@@ -309,3 +309,6 @@ whole data set.
 can begin. The code will be uploaded first then a script will be started and the
 new YGen program will be allowed to run overnight to generate as many data files
 as it can before @~08:00ADT.
+
+@09:11ADT: The 100th data file just finished generating. The data will now be
+uploaded to the GitHub repository.
