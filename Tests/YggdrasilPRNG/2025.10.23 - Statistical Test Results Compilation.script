@@ -1,0 +1,21 @@
+Script started on 2025-10-23 13:37:22-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="192" LINES="25"]
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ python3 ../../Scripts/Results_Compiler.py
+[?2004lmonobit test: 99%
+frequency within block test: 98%
+runs test: 99%
+longest run ones in a block test: 99%
+binary matrix rank test: 99%
+dft test: 98%
+non-overlapping template matching test: 100%
+overlapping template matching test: 99%
+maurer's universal test: 98%
+linear complexity test: 99%
+serial test: 99%
+approximate entropy test: 99%
+cumulative sums test: 98%
+random excursion test: 91%
+random excursion variant test: 93%
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ [?2004l
+exit
+
+Script done on 2025-10-23 13:37:39-03:00 [COMMAND_EXIT_CODE="0"]

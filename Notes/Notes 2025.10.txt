@@ -325,3 +325,10 @@ be run with a tracking script in the Tests directory.
 @11:49ADT: The results are all generated and they can now be compiled. The
 results text files will be uploaded to GitHub before another script is added for
 this.
+
+@13:23ADT: A script will now be created to compile the pass/fail rates of each
+of the 15 NIST tests from the results text files. This is done @13:36ADT and a
+script showing this result will now be uploaded.
+
+All of the tests passed very reliably except for the random excursion and random
+excursion variant tests. This is an acceptable result for this project.
