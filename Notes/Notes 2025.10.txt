@@ -287,3 +287,25 @@ sp800_22_tests repository. This will be added in the Tests directory under
 Statistical_Tests.
 
 @17:47ADT: Stopping work again on this for now and committing the documentation.
+
+@22:44ADT: To run these tests the YGen program will be converted to write binary
+data from the Yggdrasil PRNG initialized with random seed values and 4 PRNG tree
+layers to files. These tests require 1028016b = 128502B of data to have
+statistical reliability. Since the number of possible seeds is inexhaustible,
+the program will be made to run overnight tonight until 2025.10.23@~08:00ADT.
+This new YGen program will be implemented now, tested, and the code committed
+before the data generation is started tonight. The new YGen program will also
+measure the time required to generate each file and compute the average time
+that they take - giving a metric of how fast the 4-layer tree generally is.
+
+After the data files are generated, a script will be written to pass them each
+into the NIST tests and print the results to their own files and then another
+script will compile the pass/fail rates of each of the NIST tests across the
+whole data set.
+
+2025.10.23:
+
+@00:04ADT: This implementation of the YGen program is now finished and the test
+can begin. The code will be uploaded first then a script will be started and the
+new YGen program will be allowed to run overnight to generate as many data files
+as it can before @~08:00ADT.
