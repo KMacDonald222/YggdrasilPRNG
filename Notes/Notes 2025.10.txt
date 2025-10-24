@@ -332,3 +332,43 @@ script showing this result will now be uploaded.
 
 All of the tests passed very reliably except for the random excursion and random
 excursion variant tests. This is an acceptable result for this project.
+
+The actual PRNG library itself will now be called done and the implementation of
+the final driver programs can begin. There will be two of these; the YGen driver
+which will use the library to generate PRNG data and output to files or console
+in various formats, and the YCipher program which will take in files and XOR
+them with PRNG output from the library for an one-time-pad-style cryptosystem.
+Their operation will be planned out here before beginning on either of them.
+
+Both of these programs' main C++ files have been created as skeletons and have
+been added to the Makefile.
+
+YGen:
+- Takes in a seed and a number of levels to seed the PRNG library
+- Takes in the number of output symbols
+- Takes in the output mode as a number (1 = bytes, 2 = hexadecimal,
+3 = characters, 4 = integers, 5 = floats)
+- Takes in the file name to write to (empty for console), if not empty tests it
+- Depending on output mode
+    - Bytes: no action
+    - Hex: no action
+    - Characters: Takes in character set to sample from
+    - Integers: Takes in minimum and maximum values
+    - Floats: Takes in minimum and maximum values
+- Gets PRNG data, formats it, and writes it to either the given file name or the
+console
+
+YCipher:
+- Takes in a seed and a number of levels to seed the PRNG library
+- Takes in an input file name and tests it and reads its size
+- Takes in an output file name and tests it
+- Reads each byte of the input file, XOR's it with PRNG output, and writes the
+result to the output file
+
+@21:50ADT: These will be implemented in the same way the library was - all the
+code will be set up with error case checking then the code will all be
+documented, cleaned, and memory overwriting will be setup to improve security at
+a basic level.
+
+This planning and the skeletons of the YGen and YCipher programs will now be
+uploaded to the GitHub repository.
