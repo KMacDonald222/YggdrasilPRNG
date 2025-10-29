@@ -1,0 +1,326 @@
+Script started on 2025-10-28 21:41:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="192" LINES="41"]
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ make
+[?2004lmake ../../Binaries/Linux/libYggdrasilPRNG.a
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ \
+	-o ../../Source/YggdrasilPRNG/YggdrasilPRNG.o \
+	-c ../../Source/YggdrasilPRNG/YggdrasilPRNG.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/Utilities.o \
+	-c ../../Source/YggdrasilPRNG/Utilities.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/Node.o \
+	-c ../../Source/YggdrasilPRNG/Node.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/LFSRNode.o \
+	-c ../../Source/YggdrasilPRNG/LFSRNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ \
+	-o ../../Source/YggdrasilPRNG/MatrixNode.o \
+	-c ../../Source/YggdrasilPRNG/MatrixNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/XORNode.o \
+	-c ../../Source/YggdrasilPRNG/XORNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/ANDNode.o \
+	-c ../../Source/YggdrasilPRNG/ANDNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/ORNode.o \
+	-c ../../Source/YggdrasilPRNG/ORNode.cpp
+ar rcs ../../Binaries/Linux/libYggdrasilPRNG.a ../../Source/YggdrasilPRNG/YggdrasilPRNG.o \
+	../../Source/YggdrasilPRNG/Utilities.o ../../Source/YggdrasilPRNG/Node.o \
+	../../Source/YggdrasilPRNG/LFSRNode.o ../../Source/YggdrasilPRNG/MatrixNode.o \
+	../../Source/YggdrasilPRNG/XORNode.o ../../Source/YggdrasilPRNG/ANDNode.o \
+	../../Source/YggdrasilPRNG/ORNode.o
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+make ../../Binaries/Linux/YGen
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Include/ -o ../../Source/YGen/YGen.o \
+	-c ../../Source/YGen/YGen.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -o ../../Binaries/Linux/YGen ../../Source/YGen/YGen.o -L../../Binaries/Linux/ -lYggdrasilPRNG -L../../Vendor/Libraries/ -lsha
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+make ../../Binaries/Linux/YCipher
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Include/ -o ../../Source/YCipher/YCipher.o \
+	-c ../../Source/YCipher/YCipher.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -o ../../Binaries/Linux/YCipher ../../Source/YCipher/YCipher.o \
+	-L../../Binaries/Linux/ -lYggdrasilPRNG -L../../Vendor/Libraries/ -lsha
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "VUF{c}|6u/g@}E.icrm.ce>J,?LzE[&E"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): 
+Writing output to console
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 1
+
+Seeded Yggdrasil PRNG
+
+Generating 100 bytes
+
+10010011000001110110110101011111111101011101111110011110101101110011101101101111101101110001000001100001011001100101001110111001110000010101100000001111111101100111010100110101001101111100100000001010001100000010101101001011011100111000010101101000000001111100110100010011100101010000111011111000100000010100111001011110001110101101110011010010010011011010000111011110111101111111111100000111111110011110100100001001101110011011001010011011100101011010101001101000100010010101010011100110001101010001100001011100000100001001000110111110010001101011100001111111000100001101000100111101001110011111000010110110000000001101111110110001111011000111101101101011100111110011110101000100010111111000100000000010110010010011000101100001000101100000100110101001001011001001100001011010011000000010101010000101
+
+Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "%N=kQXG|:cU%u2Vm35&hn`ST^B_Z[OIC"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): Test.bin
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 1
+
+Seeded Yggdrasil PRNG
+
+Generating 100 bytes
+
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "Rr6aQqDv+1tlgn5+W:kl3J?fk(PfpD/m"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): 
+Writing output to console
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 2
+
+Seeded Yggdrasil PRNG
+
+Generating 100 hexadecimal digits
+
+15E7B71040F553C6622773D5E1DD121D13F2007BBC9C8084E6A0A8B8D62D092FA2B0C4BAA9626CC890EC681E043CE8116B3D
+
+Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "KM#iPqlj<i{wQ)9CGGm5,-"#.sNoa]l)"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): Test.hex
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 2
+
+Seeded Yggdrasil PRNG
+
+Generating 100 hexadecimal digits
+
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "H0lL,4\?Fk#deM?gdZRWc\Fr4_:`RotD"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): 
+Writing output to console
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 3
+
+Seeded Yggdrasil PRNG
+
+Character set (empty for default): 
+Default character set: "abcdefghijklmnopqrstuvwxyz`1234567890-=[]\;',./ABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+{}|:"<>?"
+
+Generating 100 characters
+
+ctk%ymo>etS`FKZ.r.d.*b0Bmw{h?mt[b.d8CD#FS$H8&L&e!he:0u-tUrc'QemWggKp={Y?927':WQ)n6|R8y32+]mfqK"%/-&t
+
+Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "6>f]w^argKNnwuqlwE0@lgHSq^9(Fjyq"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): Test.txt
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 3
+
+Seeded Yggdrasil PRNG
+
+Character set (empty for default): 
+Default character set: "abcdefghijklmnopqrstuvwxyz`1234567890-=[]\;',./ABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+{}|:"<>?"
+
+Generating 100 characters
+
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "(Yt4CZv/UcimSKK/FnWi4G]c.8O:YEF+"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): 
+Writing output to console
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 4
+
+Seeded Yggdrasil PRNG
+
+Minimum value (empty for 0): -10
+Maximum value: 10
+
+Generating 100 integers
+
+10, 1, 9, -9, 4, -6, 4, 8, 7, 10, -8, 3, -6, -3, -7, -3, 5, -4, 2, -5, 4, 10, 3, 5, -6, 2, -9, 5, 3, 4, 0, -2, -8, -7, -4, -5, -6, 4, -8, 3, 6, -8, 10, -4, 3, 3, -7, 8, 1, -3, 6, -10, -9, -3, -4, -1, -7, 4, 9, 5, -3, 2, -1, 5, 0, 2, -2, 6, 7, 8, 3, 7, -5, 9, -10, 8, 7, -4, 2, 5, -1, 5, 4, -4, 5, 9, -5, -10, 2, -8, -1, -10, 7, -8, -6, -3, 5, 4, 10, 4, 
+
+Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "e_rJFQe9,C++a^MAW1Xw'@|I?~,fO",S"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): Test.ints 
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 4
+
+Seeded Yggdrasil PRNG
+
+Minimum value (empty for 0): -10
+Maximum value: 10
+
+Generating 100 integers
+
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "|gI8%j$ayq0FVpmFN3'Qpoj}n3j+"]X+"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): 
+Writing output to console
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 5
+
+Seeded Yggdrasil PRNG
+
+Minimum value (empty for 0): -10.0
+Maximum value: 10.0
+Generating 100 floats
+
+2.00091, -9.77853, 6.50048, 3.73334, -2.58126, 8.11832, 0.14512, -5.99788, -7.00009, 9.24544, -4.39321, 2.21862, -4.11912, 5.14547, -5.06724, 7.68064, 3.49545, 8.55813, -7.46992, -6.69213, 2.79879, 1.83855, 2.19337, 3.43736, -0.373775, 4.36658, 7.65309, 3.04167, 5.75997, 1.56666, 8.87374, 0.608776, 3.50105, 6.41413, 1.74446, 3.45831, -6.25466, 2.81076, -6.32937, 2.84589, -5.23351, -4.70785, -0.449148, 5.47327, -8.86363, 4.60237, -7.54371, -3.64313, 3.83576, 6.46255, 2.8409, 7.66021, -6.68329, 2.47202, -2.13577, -1.31818, -2.91152, 4.33659, -2.6217, 7.8022, 0.466542, -8.46921, -7.16396, -4.12133, -4.55968, -4.01267, 7.17443, -4.23493, 1.15324, -8.01193, -1.95588, 7.44433, -4.78937, 7.14138, -0.475427, 7.64772, -1.86648, 5.29974, 9.77595, 9.67308, -3.44279, -8.46618, -1.61689, 6.22992, -4.00836, -1.77727, -0.9525, -8.88899, -5.59517, 5.27496, -8.32598, -9.06155, -1.29809, 1.76102, -7.53326, 0.175343, -1.87574, 5.44686, 4.17556, 5.19813, Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YGen
+[?2004lYggdrasil PRNG Data Generator
+
+Seed (empty for random): 
+Random seed: "tf";Vw@1W,n>e^(S9RAr*;Gce<1vmtmK"
+Tree layer count: 5
+
+Output symbol count: 100
+Output file name (empty for console): Test.flts
+
+1 - Binary
+2 - Hexadecimal
+3 - Text
+4 - Integers
+5 - Floats
+Output mode: 5
+
+Seeded Yggdrasil PRNG
+
+Minimum value (empty for 0): -10.0
+Maximum value: 10.0
+Generating 100 floats
+
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ cat test[K[K[K[KTest.bin
+[?2004l±ñÏ1#öÀíâ/•∞ãıˆlãòl*ô«=‚∆â&Ë%_>](ì⁄ïêÌµÏ<~ˇ∫ıÕ®î≈[¯O<j.;Kˆ4¨µÀúN≈€‚L∑qúÛ0Ω)ÕÈ%ƒÉoﬂõ°ú•ﬂ!∑[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ cat Test.hex
+[?2004l7B9CA2FC56CFA2C448A182D444F33FE43D53A2A5C6BB3841C78B0007C0D0111EE4A7E2078C305711960D099CAF2AFA17CAF5[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ cat Test.int
+[?2004l-5, -7, -10, 10, 9, -5, 9, -2, -6, 10, 2, -5, -7, 5, -10, 10, -4, -6, 7, 0, -4, -10, -6, -3, -9, 10, 0, 10, -4, -6, -6, -3, -2, -2, 4, -5, 10, 2, -2, 1, -5, 9, 6, 3, 4, -8, -5, 9, 7, 3, -7, -9, -8, 1, 6, 4, 0, -4, 3, -10, -6, -1, 2, -2, -2, 8, -2, -2, -8, -3, -8, -2, 8, -9, -3, -10, -10, 4, 4, 10, -1, 6, -1, -7, 5, -9, -7, -3, -4, -5, 1, -4, -9, 10, 3, 0, -3, -9, -8, -7, [?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ cat Test.flts
+[?2004l-1.7145, 9.92679, 9.20303, 4.78197, 6.29631, 4.63132, 5.073, -1.54285, -1.93604, 8.88995, 7.9215, 3.23064, 7.50441, -9.55922, -4.38595, 1.20412, 8.5481, -4.4679, -3.78738, -6.18849, 4.63513, -6.81976, -7.61605, -0.719389, -8.41112, 5.89345, 3.78665, 2.68755, 0.592634, -6.7772, 0.562069, -0.160288, 2.06794, 8.83017, -0.011694, 7.5083, -8.02452, 9.80606, -7.45772, -6.39812, 7.54396, -9.87394, -9.6775, -1.06235, -9.22919, -9.84024, -4.04546, -7.41183, 8.91607, 4.1686, 2.02512, -6.85404, -6.64476, -8.06271, 5.81807, 7.88855, -1.70603, 7.40168, 0.466508, -7.6908, -5.84653, -4.30162, 2.53604, 4.78943, -3.13684, 6.72033, -5.13902, -2.80677, 7.48328, 9.56332, 8.95382, -1.05284, -9.62175, -4.83197, -0.400766, 0.0092907, -3.72508, -1.61285, 5.31893, -8.11721, 8.56766, 0.357582, -4.15656, 0.830196, 7.15022, -9.50967, 3.89388, 4.62701, 3.65145, -4.81068, 6.61985, -4.56606, 7.31605, -4.70231, -5.88918, -6.66399, 2.49674, 8.31105, 2.33682, -6.27824, [?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ cat Test.txt
+[?2004lgmv!62fOeDRQ_R[wMs)S{}#MmHj6oj^EOAM.SFc2>6Dz9!{B)<!6N"!KgW|Jx]yAntIg3mwOweWErf0:oJAHJ<-DR-.]Sb9v.L:N[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ make clean
+[?2004lrm ../../Source/YggdrasilPRNG/*.o
+rm ../../Binaries/Linux/libYggdrasilPRNG.a
+rm ../../Source/YGen/*.o
+rm ../../Binaries/Linux/YGen
+rm ../../Source/YCipher/*.o
+rm ../../Binaries/Linux/YCipher
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ [?2004l
+exit
+
+Script done on 2025-10-28 21:45:06-03:00 [COMMAND_EXIT_CODE="0"]

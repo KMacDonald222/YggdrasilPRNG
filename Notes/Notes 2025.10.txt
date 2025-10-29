@@ -344,11 +344,11 @@ Both of these programs' main C++ files have been created as skeletons and have
 been added to the Makefile.
 
 YGen:
-- Takes in a seed and a number of levels to seed the PRNG library
+- Takes in a seed (or randomize) and a number of levels to seed the PRNG library
 - Takes in the number of output symbols
+- Takes in the file name to write to (empty for console), if not empty tests it
 - Takes in the output mode as a number (1 = bytes, 2 = hexadecimal,
 3 = characters, 4 = integers, 5 = floats)
-- Takes in the file name to write to (empty for console), if not empty tests it
 - Depending on output mode
     - Bytes: no action
     - Hex: no action
@@ -372,3 +372,34 @@ a basic level.
 
 This planning and the skeletons of the YGen and YCipher programs will now be
 uploaded to the GitHub repository.
+
+2025.10.26:
+
+@22:29ADT: Continuing the implementation of the YGen driver program - it has
+been started (and almost finished) but no notes were recorded on this since it
+has all been done according to the plan above. This one will likely be finished
+tomorrow.
+
+A progress indicator (10% intervals) will be printed when the YGen and YCipher
+programs are writing data to files - this was not included in the above
+descriptions. It should also track how long the generation took in seconds.
+
+2025.10.28:
+
+@13:42ADT: The binary writing mode is finished and the hexadecimal one is in the
+works today.
+
+@15:20ADT: The YGen program is now working and the memory cleanup can be done,
+then everything will be tested in a script and the code will be uploaded.
+
+@20:39ADT: Continuing work on this project, the places where to code closes due
+to an error will clear all memory and memory will be cleared when it is no
+longer needed. The functions in the YGen module will be cleaned in order. The
+parameters of the generator functions will only need to be cleared in the main
+function.
+
+@21:11ADT: This is done for everything except the main function now. Moving on
+to this right away to call this driver program done.
+
+@21:39ADT: The memory cleaning is now done. A test script will be generated, and
+the code uploaded alongside it.
