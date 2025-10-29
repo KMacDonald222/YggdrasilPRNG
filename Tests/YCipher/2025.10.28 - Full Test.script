@@ -1,0 +1,86 @@
+Script started on 2025-10-28 22:14:36-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="192" LINES="45"]
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ make
+[?2004lmake ../../Binaries/Linux/libYggdrasilPRNG.a
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ \
+	-o ../../Source/YggdrasilPRNG/YggdrasilPRNG.o \
+	-c ../../Source/YggdrasilPRNG/YggdrasilPRNG.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/Utilities.o \
+	-c ../../Source/YggdrasilPRNG/Utilities.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/Node.o \
+	-c ../../Source/YggdrasilPRNG/Node.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/LFSRNode.o \
+	-c ../../Source/YggdrasilPRNG/LFSRNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ \
+	-o ../../Source/YggdrasilPRNG/MatrixNode.o \
+	-c ../../Source/YggdrasilPRNG/MatrixNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/XORNode.o \
+	-c ../../Source/YggdrasilPRNG/XORNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/ANDNode.o \
+	-c ../../Source/YggdrasilPRNG/ANDNode.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Vendor/Include/ -I../../Include/YggdrasilPRNG/ -o ../../Source/YggdrasilPRNG/ORNode.o \
+	-c ../../Source/YggdrasilPRNG/ORNode.cpp
+ar rcs ../../Binaries/Linux/libYggdrasilPRNG.a ../../Source/YggdrasilPRNG/YggdrasilPRNG.o \
+	../../Source/YggdrasilPRNG/Utilities.o ../../Source/YggdrasilPRNG/Node.o \
+	../../Source/YggdrasilPRNG/LFSRNode.o ../../Source/YggdrasilPRNG/MatrixNode.o \
+	../../Source/YggdrasilPRNG/XORNode.o ../../Source/YggdrasilPRNG/ANDNode.o \
+	../../Source/YggdrasilPRNG/ORNode.o
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+make ../../Binaries/Linux/YGen
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Include/ -o ../../Source/YGen/YGen.o \
+	-c ../../Source/YGen/YGen.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -o ../../Binaries/Linux/YGen ../../Source/YGen/YGen.o -L../../Binaries/Linux/ -lYggdrasilPRNG -L../../Vendor/Libraries/ -lsha
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+make ../../Binaries/Linux/YCipher
+make[1]: Entering directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -I../../Include/ -o ../../Source/YCipher/YCipher.o \
+	-c ../../Source/YCipher/YCipher.cpp
+g++ -Wall -Wextra -pedantic -O3 -std=c++20 -o ../../Binaries/Linux/YCipher ../../Source/YCipher/YCipher.o \
+	-L../../Binaries/Linux/ -lYggdrasilPRNG -L../../Vendor/Libraries/ -lsha
+make[1]: Leaving directory '/home/hp17cp/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux'
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ echo "Hello World! This is a test of the YCipher program." >> Test.input
+[?2004l[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ cat Test.input
+[?2004lHello World! This is a test of the YCipher program.
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YCipher
+[?2004lYggdrasil PRNG Cipher
+
+Seed (empty for random): Password123!
+Tree layer count: 6
+
+Seeded Yggdrasil PRNG
+
+Input file name: Test.input
+Output file name: Test.output
+
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ cat Test.output
+[?2004lN±ù±v4Î5ëÂ±ﬂŒR{dÁ![^öMœê6=òÕA»NÆÖ|≈≠de¢D±=ùbò–[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ ./../../Binaries/Linux/YCipher
+[?2004lYggdrasil PRNG Cipher
+
+Seed (empty for random): Passwod rd123!
+Tree layer count: 6
+
+Seeded Yggdrasil PRNG
+
+Input file name: Test.output
+Output file name: Test.recovert 
+
+0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, Done
+
+Cleared memory
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ cat Test.recover
+[?2004lHello World! This is a test of the YCipher program.
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ make clean
+[?2004lrm ../../Source/YggdrasilPRNG/*.o
+rm ../../Binaries/Linux/libYggdrasilPRNG.a
+rm ../../Source/YGen/*.o
+rm ../../Binaries/Linux/YGen
+rm ../../Source/YCipher/*.o
+rm ../../Binaries/Linux/YCipher
+[?2004h]0;hp17cp@HP17CP: ~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[01;32mhp17cp@HP17CP[00m:[01;34m~/Documents/Projects/Programming/YggdrasilPRNG/Build/Linux[00m$ [?2004l
+exit
+
+Script done on 2025-10-28 22:16:29-03:00 [COMMAND_EXIT_CODE="0"]
